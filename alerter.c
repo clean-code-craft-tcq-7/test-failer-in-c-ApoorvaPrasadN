@@ -16,7 +16,6 @@ void alertInCelcius(float farenheit) {
     float celcius = (farenheit - 32) * 5 / 9;
     #if(SW_TEST == 1)
     int returnCode = networkAlertStub(celcius);
-    #endif
     #else
     int returnCode = celcius;
     #endif
