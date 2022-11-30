@@ -17,6 +17,9 @@ void alertInCelcius(float farenheit) {
     #if(SW_TEST == 1)
     int returnCode = networkAlertStub(celcius);
     #endif
+    #else
+    int returnCode = celcius;
+    #endif
     if (returnCode != 200) {
         // non-ok response is not an error! Issues happen in life!
         // let us keep a count of failures to report
@@ -29,6 +32,7 @@ void alertInCelcius(float farenheit) {
 int main() {
     alertInCelcius(400.5);
     alertInCelcius(303.6);
+    assert(alertFailureCount!=0);
     printf("%d alerts failed.\n", alertFailureCount);
     printf("All is well (maybe!)\n");
     return 0;
