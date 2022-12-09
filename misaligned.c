@@ -41,7 +41,7 @@ void getformat_Colormap()
 
 int main() {
     getformat_Colormap();
-    printColorMap();
+    int result =printColorMap();
     for(int i =0; i<=total_color;i++)
     {
     assert(formatted_ColorMap[i].minorColor == minorColor[i]);
