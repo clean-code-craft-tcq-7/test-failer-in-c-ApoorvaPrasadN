@@ -44,7 +44,7 @@ int main() {
     int result =printColorMap();
     for(int i =0; i<=total_color;i++)
     {
-    assert(formatted_ColorMap[i].minorColor == minorColor[i]);
+    assert(formatted_ColorMap[i].minorColor != minorColor[i]);
     }
     assert(result == 25);
     printf("All is well (maybe!)\n");
