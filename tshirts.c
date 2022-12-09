@@ -2,7 +2,7 @@
 #include <assert.h>
 
 char size(int cms) {
-    char sizeName = '\0';
+    char sizeName;
     if(cms <= 38) {
         sizeName = 'S';
     } else if(cms > 38 && cms <= 42) {
