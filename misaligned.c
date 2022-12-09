@@ -33,7 +33,7 @@ void getformat_Colormap()
             
            formatted_ColorMap[i*5+j].pairNumber = i * 5 + j;
            formatted_ColorMap[i*5+j].majorColor = (char *)majorColor[i];
-           formatted_ColorMap[i*5+j].minorColor = (char *)minorColor[i];
+           formatted_ColorMap[i*5+j].minorColor = (char *)minorColor[j];
         }
     }
           
